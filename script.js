@@ -89,3 +89,8 @@ function render() {
 }
 
 render();
+function clearProgress() {
+  localStorage.removeItem("approvedSubjects");
+  approved = new Set();
+  render();
+}
