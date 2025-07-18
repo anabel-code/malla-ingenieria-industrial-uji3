@@ -69,6 +69,7 @@ function render() {
       card.classList.add("locked");
     } else {
       card.addEventListener("click", () => {
+        approved.add(subject.code);
   if (approved.has(subject.code)) {
     approved.delete(subject.code); // ❌ Si ya estaba, se desmarca
   } else {
