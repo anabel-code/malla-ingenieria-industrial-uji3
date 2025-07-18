@@ -17,7 +17,7 @@ const subjects = [
   { code: "ET1013", name: "Electrotecnia", year: 2, unlocks: ["ET1025"] },
   { code: "ET1014", name: "Ingeniería Térmica", year: 2, unlocks: ["ET1024"] },
   { code: "ET1015", name: "Ciencia de Materiales", year: 2, unlocks: ["ET1029"] },
-  { code: "ET1016", name: "Mecánica de Fluidos", year: 2, unlocks: ["ET1035"] },
+  { code: "ET1016", name: "Mecánica de Fluidos", year: 2, unlocks: ["ET1022"] },
   { code: "ET1017", name: "Empresa", year: 2, unlocks: ["ET1033"] },
   { code: "ET1018", name: "Electrónica", year: 2, unlocks: ["ET1030"] },
   { code: "ET1019", name: "Elasticidad", year: 2, unlocks: ["ET1028"] },
