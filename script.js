@@ -48,12 +48,17 @@ const subjects = [
   { code: "ET1040", name: "Trabajo Final de Grado", year: 4, unlocks: [] },
 ];
 
-const approved = new Set();
+let approved = new Set(JSON.parse(localStorage.getItem("approvedSubjects") || "[]"));
+
 const container = document.getElementById("grid");
 
 function isUnlocked(subject) {
   if (subject.year === 1) return true;
   return subjects.some(s => s.unlocks.includes(subject.code) && approved.has(s.code));
+}
+
+function saveProgress() {
+  localStorage.setItem("approvedSubjects", JSON.stringify([...approved]));
 }
 
 function render() {
@@ -70,9 +75,9 @@ function render() {
     } else {
       card.addEventListener("click", () => {
         approved.add(subject.code);
-  render();
-});
-
+        saveProgress();
+        render();
+      });
     }
 
     container.appendChild(card);
