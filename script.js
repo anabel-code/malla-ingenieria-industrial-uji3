@@ -66,7 +66,7 @@ function render() {
   subjects.forEach(subject => {
     const card = document.createElement("div");
     card.className = "card";
-    card.innerHTML = <strong>${subject.code}</strong><br>${subject.name};
+     card.innerHTML = `<strong>${subject.code}</strong><br>${subject.name}`;
     
     if (approved.has(subject.code)) {
       card.classList.add("approved");
