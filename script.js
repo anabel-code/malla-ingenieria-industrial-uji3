@@ -70,12 +70,6 @@ function render() {
     } else {
       card.addEventListener("click", () => {
         approved.add(subject.code);
-  if (approved.has(subject.code)) {
-    approved.delete(subject.code); // ❌ Si ya estaba, se desmarca
-  } else {
-    approved.add(subject.code); // ✅ Si no estaba, se marca
-  }
-  saveProgress();
   render();
 });
 
