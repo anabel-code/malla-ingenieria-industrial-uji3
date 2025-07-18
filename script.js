@@ -1,6 +1,6 @@
 const subjects = [
   // PRIMER AÑO
-  { code: "ET1001", name: "Álgebra", year: 1, unlocks: [] },
+  { code: "ET1001", name: "Álgebra", year: 1, unlocks: ["ET1016"] },
   { code: "ET1002", name: "Cálculo I", year: 1, unlocks: ["ET1011"] },
   { code: "ET1003", name: "Informática", year: 1, unlocks: ["ET1013"] },
   { code: "ET1004", name: "Física I", year: 1, unlocks: ["ET1012"] },
